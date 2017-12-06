@@ -9,6 +9,6 @@ public class MutationController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String getMessage() {
-        return "Hello";
+        return "Hello Mundo !!";
     }
 }
