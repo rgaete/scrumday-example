@@ -12,7 +12,7 @@ public class MutationControllerTest {
     public void shouldReturnHello() throws Exception {
 
         MutationController mutationController = new MutationController();
-        assertThat(mutationController.getMessage(),is("Hello"));
+        assertThat(mutationController.getMessage(),is("Hello Mundo !!"));
 
     }
 }
