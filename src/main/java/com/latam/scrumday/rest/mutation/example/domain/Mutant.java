@@ -1,13 +1,26 @@
 package com.latam.scrumday.rest.mutation.example.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class Mutant {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer id;
     private String name;
     private String superPower;
 
-    public Mutant(String name, String superPower) {
-        this.name = name;
-        this.superPower = superPower;
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getId() {
+
+        return id;
     }
 
     public String getSuperPower() {
