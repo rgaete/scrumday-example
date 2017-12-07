@@ -59,7 +59,7 @@ afterEvaluate {
 		classDirectories = fileTree(
 				dir: "${project.buildDir}/classes/main",
 				excludes: [
-						"ExampleApplication"
+						"com.latam.scrumday.rest.mutation.example.ExampleApplication"
 				]
 		)
 	}
