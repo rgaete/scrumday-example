@@ -1,4 +1,4 @@
-package com.latam.scrumday.rest.mutation.example.unit.controller;
+package com.latam.scrumday.rest.mutation.example.controller;
 
 import com.latam.scrumday.rest.mutation.example.controller.MutationController;
 import org.junit.Test;
