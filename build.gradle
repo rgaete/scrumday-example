@@ -43,6 +43,6 @@ pitest {
 	pitestVersion = "1.1.11"
 	threads = 4
 	outputFormats = ["XML", "HTML"]
-	mutationThreshold = 80
+	mutationThreshold = 4
 	timestampedReports = false
 }
