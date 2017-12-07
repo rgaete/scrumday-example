@@ -65,4 +65,4 @@ workflows:
             - build
       - sonarqube:
           requires:
-            - sonarqube
+            - pitest
