@@ -7,7 +7,9 @@ buildscript {
 	}
 	dependencies {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-		classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5"
+		classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5")
+		classpath("info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.1.4")
+
 	}
 }
 
@@ -16,6 +18,8 @@ apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'org.sonarqube'
 apply plugin: 'jacoco'
+apply plugin: 'info.solidsoft.pitest'
+
 
 group = 'com.latam.scrumday.rest.mutation'
 version = '0.0.1-SNAPSHOT'
@@ -32,4 +36,13 @@ dependencies {
 	runtime('org.springframework.boot:spring-boot-devtools')
 	runtime('com.h2database:h2')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+pitest {
+	targetClasses = ["com.latam.scrumday.*"]
+	pitestVersion = "1.1.11"
+	threads = 4
+	outputFormats = ["XML", "HTML"]
+	mutationThreshold = 80
+	timestampedReports = false
 }
