@@ -9,7 +9,6 @@ buildscript {
 		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
 		classpath("org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5")
 		classpath("info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.1.4")
-
 	}
 }
 
