@@ -12,17 +12,14 @@ public class MutationController {
         return "Hello World, subí código CON calidad :P !!";
     }
 
-    @RequestMapping(method = RequestMethod.GET)
     public String getMessage2() {
         return "Hello World, subí código CON calidad :P !!";
     }
 
-    @RequestMapping(method = RequestMethod.GET)
     public String getMessage3() {
         return "Hello World, subí código CON calidad :P !!";
     }
 
-    @RequestMapping(method = RequestMethod.GET)
     public String getMessage4() {
         return "Hello World, subí código CON calidad :P !!";
     }
