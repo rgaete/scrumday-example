@@ -9,6 +9,6 @@ public class MutationController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String getMessage() {
-        return "Hello World, subí código sin calidad :P !!";
+        return "Hello World, subí código CON calidad :P !!";
     }
 }
