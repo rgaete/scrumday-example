@@ -10,9 +10,7 @@ public class MutationControllerTest {
 
     @Test
     public void shouldReturnHello() throws Exception {
-
         MutationController mutationController = new MutationController();
-        assertThat(mutationController.getMessage(),is("Hello Mundo !!"));
-
+        assertThat(mutationController.getMessage(),is("Hello World, subí código CON calidad :P !!"));
     }
 }
