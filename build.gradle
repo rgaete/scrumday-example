@@ -45,6 +45,7 @@ pitest {
 	mutationThreshold = 80
 	coverageThreshold = 80
 	timestampedReports = false
+	excludedClasses = ["com.latam.scrumday.rest.mutation.example.ExampleApplication"]
 }
 
 afterEvaluate {
