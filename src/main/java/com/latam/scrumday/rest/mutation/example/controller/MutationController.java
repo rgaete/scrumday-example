@@ -12,15 +12,4 @@ public class MutationController {
         return "Hello World, subí código CON calidad :P !!";
     }
 
-    public String getMessage2() {
-        return "Hello World, subí código CON calidad :P !!";
-    }
-
-    public String getMessage3() {
-        return "Hello World, subí código CON calidad :P !!";
-    }
-
-    public String getMessage4() {
-        return "Hello World, subí código CON calidad :P !!";
-    }
 }
